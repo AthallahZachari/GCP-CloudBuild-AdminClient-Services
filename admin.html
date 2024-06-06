@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dosen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <button data-id=""></button> -->
+    <a href="index.html">Kembali</a>
+    <h1>Data Mobil</h1>
+    <form >
+      <span>
+        <label for="model_mobil">Nama Model</label>
+        <input
+          data-id
+          id="model_mobil"
+          type="text"
+          placeholder="Model Mobil.."
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="mesin">Mesin</label>
+        <input
+          data-id
+          id="mesin"
+          type="text"
+          placeholder="Konfigurasi mesin.."
+        /> <!-- jgn lupa tambahin required di dalem -->
+      </span>
+      <!-- power -->
+      <span style="margin-left: 1rem">
+        <label for="horsepower">Power</label>
+        <input
+          data-id
+          id="horsepower"
+          type="text"
+          placeholder="Power.."
+        />
+      </span>
+      <!-- tahun -->
+      <span style="margin-left: 1rem">
+        <label for="tahun">Tahun Produksi</label>
+        <input
+          data-id
+          id="tahun"
+          type="text"
+          placeholder="Tahun produksi.."
+        />
+      </span>
+      <button type="submit">Simpan</button>
+    </form>
+    <main style="margin-top: 1rem">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>MODEL</th>
+            <th>SPESIFIKASI</th>
+            <th>POWER</th>
+            <th>TAHUN</th>
+            <th colspan="2">Option</th>
+          </tr>
+        </thead>
+        <tbody id="table-mobil"></tbody>
+      </table>
+      <h1 style="margin-top: 2rem;">Data Pesanan</h1>
+      <table style="margin-top: 1rem; margin-bottom: 3rem;">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>PESANAN</th>
+            <th>JUMLAH</th>
+            <th>RECIPIENT</th>
+            <th>ADDRESS</th>
+            <th colspan="2">ACTION</th>
+          </tr>
+        </thead>
+        <tbody id="table-pesanan"></tbody>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="admin.js"></script>
+  </body>
+</html>

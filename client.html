@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="index.html">Kembali</a>
+    <h1>Pesan Sekarang</h1>
+    <form style="margin-bottom: 5rem;">
+      <span>
+        <label for="model_mobil">Model</label>
+        <input
+          data-id
+          id="model_mobil"
+          type="text"
+          placeholder="Masukkan model.."
+        />
+      </span>
+      <span>
+        <label for="id_model">ID</label>
+        <input
+          data-id
+          id="id_model"
+          type="text"
+          placeholder="Masukkan ID.."
+        />
+      </span>
+      <span style="padding-left: 1rem;">
+        <label for="nama">Nama</label>
+        <input
+          data-id
+          id="nama"
+          type="text"
+          placeholder="Masukkan nama.."
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="alamat">Alamat</label>
+        <input
+          data-id
+          id="alamat"
+          type="text"
+          placeholder="Masukkan alamat.."
+        />
+      </span>
+      <span style="margin-left: 1rem">
+        <label for="jumlah">Jumlah</label>
+        <input
+          data-id
+          id="jumlah"
+          type="text"
+          placeholder="Masukkan jumlah.."
+        />
+      <button type="submit">Order Now!</button>
+    </form>
+    <h1>Daftar Mobil</h1>
+    <main style="margin-bottom: 1rem;">
+      <table>
+        <thead>
+          <tr>
+            <th>NO</th>
+            <th>CAR ID</th>
+            <th>MODEL</th>
+            <th>SPESIFIKASI</th>
+            <th>HORSEPOWER</th>
+            <th>TAHUN</th>
+            <th>ACTION</th>
+          </tr>
+        </thead>
+        <tbody id="table-client"></tbody>
+      </table>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="mhs.js"></script>
+  </body>
+</html>
