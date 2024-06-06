@@ -1,0 +1,20 @@
+{
+  "name": "dosen_service",
+  "version": "1.0.0",
+  "description": "1. Clone/Download repository ini, kemudian buka lewat kode editor. 2. Jalankan **Apache** dan **MySQL** melalui xampp 3. Buatlah sebuah database bernama \"kampus_upnvy\", kemudian import database bernama `kampus_upnvy.sql` yang berada pada projek ini ke dalam **MySQL** 4. Masuk ke terminal atau cmd. Pastikan terminal atau cmd berada pada root direktori projek. 5. Install dependency dengan cara mengetik `npm i` di terminal atau cmd, tunggu sampai selesai. 6. Jalankan service dengan cara mengetik `npm run dev` atau `npm run start`",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npx nodemon app.js"
+  },
+  "author": "rafli",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
