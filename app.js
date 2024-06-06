@@ -18,7 +18,7 @@ app.use("/cars", carRouter);
 app.use("/orders", orderRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello from car-service! 😁");
+  res.send("Hello from car-service! We're in cloudss yoo😁");
 });
 
 // Menjalankan server di port 3001
