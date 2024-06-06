@@ -25,7 +25,7 @@ function kirim() {
   if (id == "") {
     // Tambah catatan
     axios
-      .post("http://localhost:8081/cars", {
+      .post("https://admin-2msivnarsq-et.a.run.app/cars", {
         //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
         model_mobil,
         mesin,
@@ -46,7 +46,7 @@ function kirim() {
       .catch((error) => console.log(error.message));
   } else {
     axios
-      .put(`http://localhost:8081/cars/${id}`, {
+      .put(`https://admin-2msivnarsq-et.a.run.app/cars/${id}`, {
         //`https://dosen-llz4uecrhq-et.a.run.app/dosen/${id}`
         model_mobil,
         mesin,
@@ -70,7 +70,7 @@ function kirim() {
 function getCatatanMobil() {
   //ini gweh coba bikin sendiri
   axios
-    .get("http://localhost:8081/cars") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
+    .get("https://admin-2msivnarsq-et.a.run.app/cars") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
     .then(({ data }) => {
       const table = document.querySelector("#table-mobil");
       const { data: cars } = data;
@@ -109,7 +109,7 @@ function displayMobil(no, cars) {
 function getCatatanOrder() {
   //ini gweh coba bikin sendiri
   axios
-    .get("http://localhost:8081/orders") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
+    .get("https://admin-2msivnarsq-et.a.run.app/orders") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
     .then(({ data }) => {
       const table = document.querySelector("#table-pesanan");
       const { data: orders } = data;
@@ -159,7 +159,7 @@ function hapusCatatan() {
     btn.addEventListener("click", () => {
       const id = btn.dataset.id;
       axios
-        .delete(`http://localhost:8081/cars/${id}`)
+        .delete(`https://admin-2msivnarsq-et.a.run.app/cars/${id}`)
         .then(() => getCatatanMobil())
         .catch((error) => console.log(error));
     });
@@ -176,7 +176,7 @@ function hapusCatatanOrder() {
 
       console.log(id_pesanan);
       axios
-        .delete(`http://localhost:8081/orders/${id_pesanan}`)
+        .delete(`https://admin-2msivnarsq-et.a.run.app/orders${id_pesanan}`)
         .then(() => getCatatanOrder())
         .catch((error) => console.log(error));
     });

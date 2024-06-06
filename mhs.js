@@ -25,7 +25,7 @@ function kirim() {
 
   // Tambah catatan
   axios
-    .post("http://localhost:8081/client", {
+    .post("https://user-2msivnarsq-et.a.run.app/client", {
       //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
       id_mobil,
       client,
@@ -50,7 +50,7 @@ function kirim() {
 function getCatatanMobil() {
   //ini gweh coba bikin sendiri
   axios
-    .get("http://localhost:8081/client") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
+    .get("https://user-2msivnarsq-et.a.run.app/client") //"https://dosen-llz4uecrhq-et.a.run.app/dosen"
     .then(({ data }) => {
       const table = document.querySelector("#table-client");
       const { data: cars } = data;
