@@ -31,9 +31,9 @@ router.delete("/:id_pesanan", async (req, res) => {
     const { id_pesanan } = req.params;
 
     // Execute query ke database 
-    const query = "DELETE FROM order_mobil"
-    /* const query =
-      "DELETE FROM order_mobil WHERE `order_mobil`.`id_pesanan` = ?"; */
+    //const query = "DELETE FROM order_mobil"
+     const query =
+      "DELETE FROM order_mobil WHERE `order_mobil`.`id_pesanan` = ?"; 
     await connection.promise().query(query, [id_pesanan]);
 
     // mengirimkan respons jika berhasil
