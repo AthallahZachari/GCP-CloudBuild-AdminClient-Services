@@ -176,7 +176,7 @@ function hapusCatatanOrder() {
 
       console.log(id_pesanan);
       axios
-        .delete(`https://admin-2msivnarsq-et.a.run.app/orders${id_pesanan}`)
+        .delete(`https://admin-2msivnarsq-et.a.run.app/orders/${id_pesanan}`)
         .then(() => getCatatanOrder())
         .catch((error) => console.log(error));
     });
