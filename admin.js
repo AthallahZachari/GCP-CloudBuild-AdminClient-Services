@@ -142,7 +142,7 @@ function displayOrder(no, orders) {
   return `
     <tr>
       <td>${no}</td>
-      <td class="order_mobil">${/*orders.car_model*/orders.order_mobil}</td>
+      <td class="order_mobil">${/*orders.car_model*/orders.car_model}</td>
       <td class="jumlah">${orders.jumlah}</td>
       <td class="client">${orders.client}</td>
       <td class="client_address">${orders.client_address}</td>
