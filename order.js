@@ -21,7 +21,7 @@ router.post("/", async (req, res) => {
       "INSERT INTO order_mobil (order_mobil, jumlah, client, client_address) VALUES (?, ?, ?, ?)";
     await connection
       .promise()
-      .query(command, [id_mobil, client, alamat, jumlah]);
+      .query(command, [id_mobil, jumlah, client, alamat]);
 
     // mengirimkan respons jika berhasil
     res.status(201).json({
