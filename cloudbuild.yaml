@@ -8,11 +8,11 @@ steps:
       [
         "run",
         "deploy",
-        "dosen",
+        "admin",
         "--image",
         "gcr.io/$PROJECT_ID/dosen",
         "--port",
-        "3100",
+        "8081",
         "--region",
         "asia-southeast2",
         "--platform",
